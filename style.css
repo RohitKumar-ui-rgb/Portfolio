@@ -1,0 +1,323 @@
+/* Basic settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: teal;
+    color: #b8f4f8;
+}
+
+/* Header */
+header {
+    background-color: #478d7d;
+    color: #006283;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Navigation */
+
+header {
+    background-color: rgb(179, 143, 212);
+    color: rgb(0, 251, 255);
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px hotpink;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation links */
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: rgb(234, 242, 113);
+    text-decoration: none;
+
+    padding: 8px 15px;
+    border-radius: 6px;
+
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: seagreen;
+    color: #815151;
+}
+
+/* Active/focus accessibility */
+
+nav a:focus {
+    outline: 2px solid rgb(179, 255, 179);
+    outline-offset: 3px;
+}
+
+/* Mobile Navigation */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
+
+
+/* Sections */
+section {
+    background-color: lightseagreen;
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #f4c2d3;
+}
+
+
+/* Hero */
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    border-radius: 50%;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #fd5d01;
+    color: #004803;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero a:hover {
+    background-color: #8e5e5e;
+}
+
+
+/* Projects */
+article {
+    border: 1px solid #cb3c3c;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+
+/* Skills Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #cb3c3c;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cb3c3c;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #529149;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cafc02;
+}
+
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    section {
+        width: 85%;
+        padding: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+}
+
+
+/* Social Media Buttons */
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    position:middle;
+    background-color: #522886;
+    color: white !important;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 8px rgba(67, 44, 130, 0.2);
+}
+
+.social-btn:hover {
+    background-color: #444;
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-btn:active {
+    transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .social-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .social-btn {
+        text-align: center;
+    }
+}
+
+
+/* Contact */
+
+#contact {
+    background-color: white;
+}
+
+#contact a {
+    color: #222;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #222;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
